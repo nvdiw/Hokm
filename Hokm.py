@@ -1,4 +1,3 @@
-
 import random
 
 hokm = ''
@@ -58,45 +57,14 @@ for i in range(4) :                                 # baraye 4 nafar nafari 8 ta
 
 # print(user)
 
-if hokm == 'PK' :                                   # hokm age PK she arzeshe PKha mire bala
-    for i in range(4) :
-        D = {}
-        for k, v in user[i].items() :
-            if 'PK' in k :
-                v += 13
-            d = {k : v}
-            D.update(d)
-        user[i] = D
-
-elif hokm == 'DL' :                                   # hokm age DL she arzeshe DLha mire bala
-    for i in range(4) :
-        D = {}
-        for k, v in user[i].items() :
-            if 'DL' in k :
-                v += 13
-            d = {k : v}
-            D.update(d)
-        user[i] = D
-
-elif hokm == 'GE' :                                   # hokm age GE she arzeshe GEha mire bala
-    for i in range(4) :
-        D = {}
-        for k, v in user[i].items() :
-            if 'GE' in k :
-                v += 13
-            d = {k : v}
-            D.update(d)
-        user[i] = D
-
-elif hokm == 'KE' :                                   # hokm age KE she arzeshe KEha mire bala
-    for i in range(4) :
-        D = {}
-        for k, v in user[i].items() :
-            if 'KE' in k :
-                v += 13
-            d = {k : v}
-            D.update(d)
-        user[i] = D
+for i in range(4) :
+    D = {}
+    for k, v in user[i].items() :
+        if hokm in k :
+            v += 13
+        d = {k : v}
+        D.update(d)
+    user[i] = D
 
 for dast in range(13) :
     miz = {}
