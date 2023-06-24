@@ -1,11 +1,6 @@
 
 import random
 
-lst_all = {'PK 1' : 1, 'PK 2' : 2, 'PK 3' : 3, 'PK 4' : 4, 'PK 5' : 5, 'PK 6' : 6, 'PK 7' : 7, 'PK 8' : 8, 'PK 9' : 9, 'PK 10' : 10, 'PK 11' : 11, 'PK 12' : 12, 'PK 13' : 13 ,
-           'DL 1' : 1, 'DL 2' : 2, 'DL 3' : 3, 'DL 4' : 4, 'DL 5' : 5, 'DL 6' : 6, 'DL 7' : 7, 'DL 8' : 8, 'DL 9' : 9, 'DL 10' : 10, 'DL 11' : 11, 'DL 12' : 12, 'DL 13' : 13 ,
-           'GE 1' : 1, 'GE 2' : 2, 'GE 3' : 3, 'GE 4' : 4, 'GE 5' : 5, 'GE 6' : 6, 'GE 7' : 7, 'GE 8' : 8, 'GE 9' : 9, 'GE 10' : 10, 'GE 11' : 11, 'GE 12' : 12, 'GE 13' : 13 ,
-           'KE 1' : 1, 'KE 2' : 2, 'KE 3' : 3, 'KE 4' : 4, 'KE 5' : 5, 'KE 6' : 6, 'KE 7' : 7, 'KE 8' : 8, 'KE 9' : 9, 'KE 10' : 10, 'KE 11' : 11, 'KE 12' : 12, 'KE 13' : 13 }
-
 hokm = ''
 hokms = ['PK','DL','GE','KE']
 players = {0 : 0, 1 : 0, 2 : 0, 3 : 0}
@@ -13,6 +8,13 @@ teams = {0 : 0, 1 : 0}
 user = ['', '', '', '']
 first = 0
 asli = ''
+lst_all = {}
+
+for i in hokms :
+    for j in range(1,14) :
+        p = {f'{i}' ' ' f'{j}' : j}
+        lst_all.update(p)
+        
 # k, v = random.choice(list(lst_all.items()))
 
 for i in range(4) :                                 # baraye 4 nafar nafari 5 ta cart mindaze
